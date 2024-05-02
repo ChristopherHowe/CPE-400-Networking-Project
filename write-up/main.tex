@@ -1,0 +1,55 @@
+\documentclass{assignment-x}
+
+\hmwkClass{CPE 400}
+\hmwkTitle{Final Project Delivery}
+\hmwkDueDate{May 1, 2024}
+\hmwkClassTime{Section 1001}
+\hmwkClassInstructor{Igor Remizov}
+\hmwkAuthorName{Christopher Howe}
+
+\begin{document}
+\maketitle
+\pagebreak
+
+\section{Project Overview}
+\subsection{Project Description}
+I created a project that students can use to learn more about networking in a hands-on environment.
+The goal of this project was to set up an environment to simulate basic package delivery between hosts over a routed network.
+
+\subsection{Project Features}
+\begin{table}[htbp]
+    \centering
+    \begin{tabularx}{\textwidth}{cX}
+        \hline
+        \textbf{Feature} & \textbf{Description}                                                                                                                                                                           \\ \hline
+        \textbf{feat 1}  & Users can create a host by supplying a name. globally unique MAC addresses are automatically assigned.                                                                                         \\ \hline
+        \textbf{feat 2}  & Users can create a router by supplying a router name, an internal IP for the router to act as a gateway and a subnet for the router to serve IPs to. MAC addresses are automatically assigned. \\ \hline
+        \textbf{feat 3}  & Users can connect hosts to routers and routers to other routers. When a host or router is connected, the router gives it an IP address automatically.                                          \\ \hline
+        \textbf{feat 4}  & Users can queue packets on hosts to be sent to other hosts. The application similarly handles them to real packets.                                                                            \\ \hline
+        \textbf{feat 5}  & Users can simulate to show how the packets move between the hosts and routers.                                                                                                                 \\ \hline
+        \textbf{feat 6}  & Users can save and load the environments they create to simplify the time required to set up an environment.                                                                                   \\ \hline
+    \end{tabularx}
+    \label{tab:project_features}
+\end{table}
+
+\subsection{Motivation}
+I decided to work on this project because I noticed a lack of interactive tools for learning computer networking. Most resources I found were either too complex or too simplistic, leaving users struggling to grasp fundamental concepts. With my interest in networking and some familiarity with React and ReactFlow, I saw an opportunity to create something practical and accessible. This project became a way for me to fill that gap and provide a hands-on learning experience for anyone interested in networking.
+
+Through the process, I developed a better understanding of the fine details of networking. While learning by reading and from lectures is important, the specific relationships between devices and signals passed between them are easily glossed over. Having to manually implement specific networking protocols, I had to grasp them at a deeper level.
+
+\section{Results and Details}
+I was able to successfully create an application that fulfilled the features laid out.
+I was able to simulate some simple networks such as a single private router to an external public network.
+
+\subsection{Application Use}
+The following screenshots demonstrate the functionality provided by this application. The app is also hosted at \url{http://unr.onrender.com} for users who would like to try out the application and test out the various features. The code for this application
+
+\subsection{Technology Stack}
+
+
+\section{Conclusion}
+o Were the results consistent with your ini;al expecta;ons?
+o Do you plan to con;nue doing personal research and expand in this focus area?
+o What have you ul;mately learned?
+
+\end{document}

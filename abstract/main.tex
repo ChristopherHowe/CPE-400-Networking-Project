@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{CPE 400 Project}
+\author{Chris Howe}
+\date{February 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+For my project, I have two ideas.
+
+The first project involves the development of a tool that applies machine learning to Docker containers to measure and enhance network performance. I will collect performance data from Docker containers, including metrics such as CPU usage, memory usage, network latency, and throughput. I will use vanilla Docker to host the containers and Python for scripting and machine learning. I expect to use TensorFlow and Scikit-learn although I have little experience with these tools. I want to use this project as a diving board into real AI problems after taking CS 482. The focus will be on adaptive adjustments based on observed performance metrics. I’ll need to interface with the docker API to make this happen. The code and relevant data will be shared on a public GitHub repository. The expected result is an analysis of a particular docker network environment and a system that adapts the network to simplify the process.
+
+My second idea is to create a visual simulation of TCP networks for educational purposes. The goal is to provide an interactive tool where users can add or delete devices, adjust application and transport protocols (e.g., HTTP, HTTPS, TCP, SMS), and observe the impact on network behaviors. The simulation will measure various network parameters, including latency, bandwidth, and packet loss. The easiest implementation would be to host a web server with react as a platform. No real backend would be needed. I would use typescript instead of javascript since type checking is very handy. The code and any relevant data will be shared on GitHub, and the website may be hosted publicly if I am happy with its state. The expected result is a page that allows users to learn exactly how networking protocols work by messing around with them instead of having to read about it.
+
+
+\end{document}

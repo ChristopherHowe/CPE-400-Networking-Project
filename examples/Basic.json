@@ -1,0 +1,346 @@
+{
+    "nodes": [
+        {
+            "id": "DC:66:E3:51:09:D3",
+            "position": {
+                "x": -183.55845389639452,
+                "y": 152.76408982732426
+            },
+            "data": {
+                "mac": "DC:66:E3:51:09:D3"
+            },
+            "type": "hostNode",
+            "width": 160,
+            "height": 96,
+            "selected": true,
+            "positionAbsolute": {
+                "x": -183.55845389639452,
+                "y": 152.76408982732426
+            },
+            "dragging": false
+        },
+        {
+            "id": "D6:49:66:89:F3:48",
+            "position": {
+                "x": 18.5,
+                "y": 159.5
+            },
+            "data": {
+                "mac": "D6:49:66:89:F3:48"
+            },
+            "type": "hostNode",
+            "width": 160,
+            "height": 96,
+            "selected": false,
+            "positionAbsolute": {
+                "x": 18.5,
+                "y": 159.5
+            },
+            "dragging": false
+        },
+        {
+            "id": "28:D4:60:E7:1C:8F",
+            "position": {
+                "x": -58,
+                "y": -13.5
+            },
+            "data": {
+                "mac": "28:D4:60:E7:1C:8F"
+            },
+            "type": "routerNode",
+            "width": 126,
+            "height": 136,
+            "selected": false,
+            "positionAbsolute": {
+                "x": -58,
+                "y": -13.5
+            },
+            "dragging": false
+        },
+        {
+            "id": "83:F8:F7:B0:1D:06",
+            "position": {
+                "x": 118.59710648653055,
+                "y": -127.65660767647384
+            },
+            "data": {
+                "mac": "83:F8:F7:B0:1D:06"
+            },
+            "type": "routerNode",
+            "width": 126,
+            "height": 136,
+            "selected": false,
+            "positionAbsolute": {
+                "x": 118.59710648653055,
+                "y": -127.65660767647384
+            },
+            "dragging": false
+        },
+        {
+            "id": "FB:FB:3A:B2:50:83",
+            "position": {
+                "x": 314.61176859621304,
+                "y": -14.001047293548766
+            },
+            "data": {
+                "mac": "FB:FB:3A:B2:50:83"
+            },
+            "type": "routerNode",
+            "width": 127,
+            "height": 136,
+            "selected": false,
+            "positionAbsolute": {
+                "x": 314.61176859621304,
+                "y": -14.001047293548766
+            },
+            "dragging": false
+        },
+        {
+            "id": "04:29:1B:67:58:F4",
+            "position": {
+                "x": 299.7871302853966,
+                "y": 167.18897650531738
+            },
+            "data": {
+                "mac": "04:29:1B:67:58:F4"
+            },
+            "type": "hostNode",
+            "width": 160,
+            "height": 96,
+            "selected": false,
+            "positionAbsolute": {
+                "x": 299.7871302853966,
+                "y": 167.18897650531738
+            },
+            "dragging": false
+        },
+        {
+            "id": "6C:59:E1:C5:EA:84",
+            "position": {
+                "x": 101.30169512391143,
+                "y": -270.137853663764
+            },
+            "data": {
+                "mac": "6C:59:E1:C5:EA:84"
+            },
+            "type": "hostNode",
+            "width": 160,
+            "height": 96,
+            "selected": false,
+            "positionAbsolute": {
+                "x": 101.30169512391143,
+                "y": -270.137853663764
+            },
+            "dragging": false
+        }
+    ],
+    "edges": [
+        {
+            "animated": false,
+            "style": {
+                "strokeWidth": 2.5,
+                "stroke": "#D3DEE4"
+            },
+            "source": "DC:66:E3:51:09:D3",
+            "sourceHandle": "top",
+            "target": "28:D4:60:E7:1C:8F",
+            "targetHandle": "bottom-internal",
+            "id": "reactflow__edge-DC:66:E3:51:09:D3top-28:D4:60:E7:1C:8Fbottom-internal"
+        },
+        {
+            "animated": false,
+            "style": {
+                "strokeWidth": 2.5,
+                "stroke": "#D3DEE4"
+            },
+            "source": "D6:49:66:89:F3:48",
+            "sourceHandle": "top",
+            "target": "28:D4:60:E7:1C:8F",
+            "targetHandle": "bottom-internal",
+            "id": "reactflow__edge-D6:49:66:89:F3:48top-28:D4:60:E7:1C:8Fbottom-internal"
+        },
+        {
+            "animated": false,
+            "style": {
+                "strokeWidth": 2.5,
+                "stroke": "#D3DEE4"
+            },
+            "source": "28:D4:60:E7:1C:8F",
+            "sourceHandle": "right-external",
+            "target": "83:F8:F7:B0:1D:06",
+            "targetHandle": "bottom-internal",
+            "id": "reactflow__edge-28:D4:60:E7:1C:8Fright-external-83:F8:F7:B0:1D:06bottom-internal"
+        },
+        {
+            "animated": false,
+            "style": {
+                "strokeWidth": 2.5,
+                "stroke": "#D3DEE4"
+            },
+            "source": "FB:FB:3A:B2:50:83",
+            "sourceHandle": "left-external",
+            "target": "83:F8:F7:B0:1D:06",
+            "targetHandle": "bottom-internal",
+            "id": "reactflow__edge-FB:FB:3A:B2:50:83left-external-83:F8:F7:B0:1D:06bottom-internal"
+        },
+        {
+            "animated": false,
+            "style": {
+                "strokeWidth": 2.5,
+                "stroke": "#D3DEE4"
+            },
+            "source": "04:29:1B:67:58:F4",
+            "sourceHandle": "top",
+            "target": "FB:FB:3A:B2:50:83",
+            "targetHandle": "bottom-internal",
+            "id": "reactflow__edge-04:29:1B:67:58:F4top-FB:FB:3A:B2:50:83bottom-internal"
+        },
+        {
+            "animated": false,
+            "style": {
+                "strokeWidth": 2.5,
+                "stroke": "#D3DEE4"
+            },
+            "source": "6C:59:E1:C5:EA:84",
+            "sourceHandle": "bottom",
+            "target": "83:F8:F7:B0:1D:06",
+            "targetHandle": "top-internal",
+            "id": "reactflow__edge-6C:59:E1:C5:EA:84bottom-83:F8:F7:B0:1D:06top-internal"
+        }
+    ],
+    "Hosts": [
+        {
+            "name": "Jerry",
+            "macAddress": "DC:66:E3:51:09:D3",
+            "queuedPackets": [
+                {
+                    "id": "p-1",
+                    "destIP": "2.2.2.4",
+                    "srcIP": "1.1.1.2",
+                    "segment": {
+                        "destPort": 80,
+                        "srcPort": 5416,
+                        "data": "Hey AWS"
+                    }
+                },
+                {
+                    "id": "p-1",
+                    "destIP": "1.1.1.3",
+                    "srcIP": "1.1.1.2",
+                    "segment": {
+                        "destPort": 80,
+                        "srcPort": 5700,
+                        "data": "Hey Bob"
+                    }
+                },
+                {
+                    "id": "p-1",
+                    "destIP": "3.3.3.1",
+                    "srcIP": "1.1.1.2",
+                    "segment": {
+                        "destPort": 80,
+                        "srcPort": 4619,
+                        "data": "Hey Time"
+                    }
+                }
+            ],
+            "recievedPackets": [],
+            "gateway": "1.1.1.1",
+            "ipAddress": "1.1.1.2"
+        },
+        {
+            "name": "Bob",
+            "macAddress": "D6:49:66:89:F3:48",
+            "queuedPackets": [],
+            "recievedPackets": [],
+            "gateway": "1.1.1.1",
+            "ipAddress": "1.1.1.3"
+        },
+        {
+            "name": "Tim",
+            "macAddress": "04:29:1B:67:58:F4",
+            "queuedPackets": [
+                {
+                    "id": "p-1",
+                    "destIP": "2.2.2.4",
+                    "srcIP": "3.3.3.1",
+                    "segment": {
+                        "destPort": 80,
+                        "srcPort": 5614,
+                        "data": "Send Prime Video"
+                    }
+                }
+            ],
+            "recievedPackets": [],
+            "gateway": "3.3.3.3",
+            "ipAddress": "3.3.3.1"
+        },
+        {
+            "name": "AWS",
+            "macAddress": "6C:59:E1:C5:EA:84",
+            "queuedPackets": [],
+            "recievedPackets": [],
+            "gateway": "2.2.2.2",
+            "ipAddress": "2.2.2.4"
+        }
+    ],
+    "Routers": [
+        {
+            "name": "Router 1",
+            "macAddress": "28:D4:60:E7:1C:8F",
+            "intIPAddress": "1.1.1.1",
+            "extIPAddress": "2.2.2.1",
+            "gateway": "2.2.2.2",
+            "subnet": "1.1.1.0/24",
+            "activeLeases": [
+                {
+                    "ipAddress": "1.1.1.2",
+                    "macAddress": "DC:66:E3:51:09:D3"
+                },
+                {
+                    "ipAddress": "1.1.1.3",
+                    "macAddress": "D6:49:66:89:F3:48"
+                }
+            ],
+            "PATTable": []
+        },
+        {
+            "name": "Router 2",
+            "macAddress": "83:F8:F7:B0:1D:06",
+            "intIPAddress": "2.2.2.2",
+            "extIPAddress": "",
+            "gateway": "",
+            "subnet": "2.2.2.0/24",
+            "activeLeases": [
+                {
+                    "ipAddress": "2.2.2.1",
+                    "macAddress": "28:D4:60:E7:1C:8F"
+                },
+                {
+                    "ipAddress": "2.2.2.3",
+                    "macAddress": "FB:FB:3A:B2:50:83"
+                },
+                {
+                    "ipAddress": "2.2.2.4",
+                    "macAddress": "6C:59:E1:C5:EA:84"
+                }
+            ],
+            "PATTable": []
+        },
+        {
+            "name": "Router 3",
+            "macAddress": "FB:FB:3A:B2:50:83",
+            "intIPAddress": "3.3.3.3",
+            "extIPAddress": "2.2.2.3",
+            "gateway": "2.2.2.2",
+            "subnet": "3.3.3.0/24",
+            "activeLeases": [
+                {
+                    "ipAddress": "3.3.3.1",
+                    "macAddress": "04:29:1B:67:58:F4"
+                }
+            ],
+            "PATTable": []
+        }
+    ]
+}
