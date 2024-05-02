@@ -42,14 +42,47 @@ I was able to successfully create an application that fulfilled the features lai
 I was able to simulate some simple networks such as a single private router to an external public network.
 
 \subsection{Application Use}
-The following screenshots demonstrate the functionality provided by this application. The app is also hosted at \url{http://unr.onrender.com} for users who would like to try out the application and test out the various features. The code for this application
+The following screenshots demonstrate the functionality provided by this application. The app is also hosted at \url{https://cpe-400-networking-project.onrender.com} for users who would like to try out the application and test out the various features. The code for this application is also available publicly at \url{https://github.com/ChristopherHowe/CPE-400-Networking-Project}
+
+\img{empty-dashboard}{Initial page loaded when the application opens}
+\begin{minipage}{0.48\linewidth}
+    \img{create-host}{Dialog where users can create hosts}
+\end{minipage}
+\begin{minipage}{0.48\linewidth}
+    \img{create-router}{Dialog where users can create routers}
+\end{minipage}
+\img{loaded-example}{The basic example loaded when the user clicks "Example Simulation"}
+\img{running-simulation}{Running the simulation and sending a packet between the two interfaces}
+\begin{minipage}{0.48\linewidth}
+    \img{PAT-table}{PAT Table of ports allocated to each packet sent from the router}
+\end{minipage}
+\begin{minipage}{0.48\linewidth}
+    \img{Queue-packets}{Dialog where users can see which packets have been received by a particular host and where they can queue new ones to send}
+\end{minipage}
+
+\subsection{Concept Overview}
+Port Address Translation (PAT) is a key component of network address translation (NAT) used in home and small office networks\cite{geeksforgeeks_nat_pat}. It enables multiple devices to share a single public IP address by mapping each device's private IP address and port number to a unique port on the public IP. This allows devices within the local network to communicate with external networks, like the Internet, while appearing to have distinct IP addresses.
+
+Transport, Network, and Application encapsulation are essential processes in data transmission across networks. Transport encapsulation involves adding headers like TCP or UDP to the data payload for reliable delivery\cite{karthikayan2024}. Network encapsulation adds IP headers for proper routing between networks, while Application encapsulation packages data into formats like HTTP or SMTP for specific applications. Together, these layers ensure data is correctly formatted, routed, and delivered to its destination.
 
 \subsection{Technology Stack}
+This application is built almost entirely using React\cite{react}. In an effort to use modern web techniques, the application is built with NextJS which makes it easy to build a static application and eventually provide server-side rendering. All validation on all fields is coded by hand, but eventually, it would be nice to use something like Zod to make it a little more robust. The node-ip package is used to perform some of the basic IP parsing/formatting. Tailwind CSS \cite{tailwindcss} is used to style all of the components. The basic website layout was provided by Tailwind UI \cite{tailwindui} as well.
 
+\subsection{Finer Details}
+Throughout the application development, decisions were made on what features to fully implement and what to "fake". This project sends packets synchronously to make it as visually clear as possible what is happening at any moment. It's a tight balance of what can be implemented reasonably within the scope of this project. The compromise reached was to adhere to the real-life model as much as possible but have everything controlled by a global "context" entity. This makes it as simple as possible to provide the correct implementation in a way that closely mirrors real life.
 
 \section{Conclusion}
-o Were the results consistent with your ini;al expecta;ons?
-o Do you plan to con;nue doing personal research and expand in this focus area?
-o What have you ul;mately learned?
+\section{Reflection on Expectations}
+My initial expectation was that it would be really easy to develop this since I thought routing algorithms would be really simple. I was sorely mistaken. Routing algorithms, IP leasing, and correct full implementation of transport protocols have a lot of moving parts. I believe that implementing this tool fully, with exact following of ISO standards would be extremely useful to people trying to learn more about networking.
+
+\section{Continued Work}
+I would love to continue working on this project in the future. I got it to a point where I would consider it to have some value. However, there are a few things I would like to continue to add in the future. First, the users should be able to add processes within hosts that can be correlated to specific ports. Next, routers should handle the packets themselves and direct them to the correct outbound link. Also, I would like to implement switches to control which NAT technique is being used. Finally, I would love to implement some security measures so that the users can look at how they work. There are a million other things that could also be implemented. It's a huge task with lots of different steps and pieces.
+
+\section{Lesson Learned}
+In summary, this project has provided a rich technical learning experience. Through practical implementation, I've gained a comprehensive understanding of routing algorithms, IP leasing, and transport protocols. Initially underestimating their complexity, I've come to appreciate the intricate details involved. Despite the challenges, successfully reaching a stage of practical application has been rewarding. This process has emphasized the importance of hands-on learning in grasping technical concepts effectively. Moving forward, I'm excited to apply these newfound insights to future projects, leveraging this experience to tackle more complex networking challenges.
+
+\pagebreak
+\bibliographystyle{plain}
+\bibliography{references} % Assuming your .bib file is named "references.bib"
 
 \end{document}
