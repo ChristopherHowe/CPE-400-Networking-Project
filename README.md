@@ -1,5 +1,3 @@
-# CPE 400 Networking Project
-
 # Getting Started
 Helpful commands
 ```bash
